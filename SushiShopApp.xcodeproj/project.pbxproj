@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		5792F05827907FB6002D6F76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F05727907FB6002D6F76 /* AppDelegate.swift */; };
 		5792F05A27907FB6002D6F76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F05927907FB6002D6F76 /* SceneDelegate.swift */; };
-		5792F05C27907FB6002D6F76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F05B27907FB6002D6F76 /* ViewController.swift */; };
 		5792F05F27907FB6002D6F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5792F05D27907FB6002D6F76 /* Main.storyboard */; };
 		5792F06127907FB9002D6F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5792F06027907FB9002D6F76 /* Assets.xcassets */; };
 		5792F06427907FB9002D6F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5792F06227907FB9002D6F76 /* LaunchScreen.storyboard */; };
+		5792F06C2790804B002D6F76 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F06B2790804B002D6F76 /* MenuViewController.swift */; };
+		5792F0722790814F002D6F76 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F0702790814F002D6F76 /* ProductCell.swift */; };
+		5792F0732790814F002D6F76 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5792F0712790814F002D6F76 /* ProductCell.xib */; };
+		5792F075279083CE002D6F76 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F074279083CE002D6F76 /* MenuModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5792F05427907FB6002D6F76 /* SushiShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5792F05727907FB6002D6F76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5792F05927907FB6002D6F76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5792F05B27907FB6002D6F76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5792F05E27907FB6002D6F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5792F06027907FB9002D6F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5792F06327907FB9002D6F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5792F06527907FB9002D6F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5792F06B2790804B002D6F76 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		5792F0702790814F002D6F76 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		5792F0712790814F002D6F76 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		5792F074279083CE002D6F76 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		5792F05627907FB6002D6F76 /* SushiShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				5792F06D27908107002D6F76 /* MenuCell */,
 				5792F05727907FB6002D6F76 /* AppDelegate.swift */,
 				5792F05927907FB6002D6F76 /* SceneDelegate.swift */,
-				5792F05B27907FB6002D6F76 /* ViewController.swift */,
 				5792F05D27907FB6002D6F76 /* Main.storyboard */,
+				5792F06B2790804B002D6F76 /* MenuViewController.swift */,
+				5792F074279083CE002D6F76 /* MenuModel.swift */,
 				5792F06027907FB9002D6F76 /* Assets.xcassets */,
 				5792F06227907FB9002D6F76 /* LaunchScreen.storyboard */,
 				5792F06527907FB9002D6F76 /* Info.plist */,
 			);
 			path = SushiShopApp;
+			sourceTree = "<group>";
+		};
+		5792F06D27908107002D6F76 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				5792F0702790814F002D6F76 /* ProductCell.swift */,
+				5792F0712790814F002D6F76 /* ProductCell.xib */,
+			);
+			path = MenuCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5792F06427907FB9002D6F76 /* LaunchScreen.storyboard in Resources */,
+				5792F0732790814F002D6F76 /* ProductCell.xib in Resources */,
 				5792F06127907FB9002D6F76 /* Assets.xcassets in Resources */,
 				5792F05F27907FB6002D6F76 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5792F05C27907FB6002D6F76 /* ViewController.swift in Sources */,
 				5792F05827907FB6002D6F76 /* AppDelegate.swift in Sources */,
+				5792F0722790814F002D6F76 /* ProductCell.swift in Sources */,
+				5792F075279083CE002D6F76 /* MenuModel.swift in Sources */,
 				5792F05A27907FB6002D6F76 /* SceneDelegate.swift in Sources */,
+				5792F06C2790804B002D6F76 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
